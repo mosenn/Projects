@@ -1,0 +1,103 @@
+.main-slider {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.main-slider > figure > img {
+	width: 250px;
+}
+
+.main-slider > figure {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.main-slider > figure > h4 {
+	margin-top: -5px;
+}
+.main-slider > figure > figcaption {
+	border: 1px solid rgba(128, 128, 128, 0.294);
+	padding: 10px;
+	margin-bottom: 15px;
+	line-height: 25px;
+	box-shadow: 2px 2px 5px rgb(196, 196, 211), -2px -2px 5px rgb(196, 196, 211);
+}
+.animateclass {
+	animation: imganimate 1s ease-in-out alternate-reverse;
+}
+
+.animationclassTwo {
+	animation: imganimate2 1s ease-in-out alternate-reverse;
+}
+@keyframes imganimate {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.1);
+	}
+}
+@keyframes imganimate2 {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.1);
+	}
+}
+
+.parent-arrow-btn {
+	position: fixed;
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	color: skyblue;
+	top: 410px;
+}
+.parent-arrow-btn > svg {
+	font-size: 30px;
+	margin: 15px;
+	padding: 15px;
+	cursor: pointer;
+}
+.parent-arrow-btn > svg:hover {
+	color: darkblue;
+}
+.parent-arrow-btn > svg:nth-of-type(2) {
+	transform: rotate(180deg);
+}
+
+@media screen and (min-width: 768px) {
+	.parent-arrow-btn > svg:nth-of-type(1) {
+		margin-left: 80px;
+	}
+	.parent-arrow-btn > svg:nth-of-type(2) {
+		margin-right: 80px;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.main-slider > figure > img {
+		object-fit: contain;
+	}
+
+	.parent-arrow-btn > svg:nth-of-type(1) {
+		margin-left: 200px;
+	}
+	.parent-arrow-btn > svg:nth-of-type(2) {
+		margin-right: 200px;
+	}
+	.main-slider > figure > figcaption {
+		width: 50%;
+	}
+}
+
+.App {
+	text-align: center;
+}
