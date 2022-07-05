@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
 
 :root {
-	--primary: #032541;
-	--secondary: #21d07a;
+	--primary: #e5ebf0;
+	--secondary: #5e539f;
 	--white: #fff;
 }
 
@@ -24,9 +24,15 @@ body {
 *:after {
 	box-sizing: border-box;
 }
-
+.contorls {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
 .btn {
-	padding: 10px 15px;
+	padding: 8px;
+	margin-top: 10px;
 	background-color: var(--secondary);
 	color: var(--primary);
 	border-radius: 5px;
@@ -36,7 +42,8 @@ body {
 	border: none;
 	font-size: 1rem;
 	transition: all 0.3s ease;
-	line-height: 1.1;
+
+	width: fit-content;
 }
 
 .btn:hover {
