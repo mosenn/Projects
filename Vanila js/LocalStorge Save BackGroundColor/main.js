@@ -10,7 +10,7 @@ ShowBgText.textContent = GetThemes;
 warrpermenu.forEach((allLi) => {
 	allLi.addEventListener('click', (e) => {
 		let BackGroundcolor = e.target.dataset.color;
-		console.log(BackGroundcolor);
+		
 		document.body.className = BackGroundcolor;
 		ShowBgText.textContent = BackGroundcolor;
 		localStorage.setItem('themes', BackGroundcolor);
